@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  font-family: "Lato";
+  --background-color: #3b3b3b;
+  --header-color: var(--background-color);
+  --footer-color: var(--background-color);
+  --text-color: white;
+}
+
+body {
+  margin: 0%;
+  padding: 0px;
+}
+
+header {
+  margin: 0%;
+  border: 0px;
+  padding-top: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  background-color: var(--header-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3.5rem;
+  margin: 0%;
+  border: 0px;
+  padding-top: 1rem;
+  background-color: var(--footer-color);
+  text-align: center;
+  color: var(--text-color);
+}
+
+a {
+  /* text-decoration: none; */
+  color: var(--text-color);
+}
+
+.avatar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    var(--header-color),
+    var(--header-color) 50%,
+    transparent 50%,
+    transparent 100%
+  );
+}
+
+.avatar > img {
+  width: 10%;
+  height: 10%;
+  animation-name: enlarge-avatar;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes enlarge-avatar {
+  0% {
+    width: 5%;
+    height: 5%;
+  }
+  50% {
+    width: 12%;
+    height: 12%;
+  }
+  100% {
+    width: 10%;
+    height: 10%;
+  }
+}
