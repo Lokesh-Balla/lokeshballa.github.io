@@ -11,7 +11,7 @@
 }
 
 body {
-  margin: 1rem 2rem;
+  margin: 1rem;
   nav {
     background-color: inherit;
 
@@ -28,7 +28,10 @@ body {
         margin: 0rem 1rem;
         &:first-child {
           margin-right: auto;
-          padding-left: 0%;
+          margin-left: 0rem;
+        }
+        &:last-child {
+          margin-right: 0rem;
         }
       }
 
