@@ -19,15 +19,16 @@ body {
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      gap: 2rem;
       list-style-type: none;
       margin: 0;
       padding: 0;
 
       li {
         display: inline;
+        margin: 0rem 1rem;
         &:first-child {
           margin-right: auto;
+          padding-left: 0%;
         }
       }
 
@@ -71,6 +72,7 @@ body {
 
   .switch {
     display: inline-block;
+    margin-left: -1.5rem;
     width: 4rem;
     height: 2rem;
 
