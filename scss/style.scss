@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Patua+One&display=swap");
+
+@import "color_scheme";
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Patua One", cursive;
+}
+
+body {
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 2rem;
+    background-color: inherit;
+
+    a {
+      text-decoration: none;
+      font-size: 2rem;
+      color: #9e9e9e;
+
+      .fa-github:hover {
+        color: #24292e;
+      }
+
+      .fa-linkedin:hover {
+        color: #0a66c2;
+      }
+
+      .fa-twitter:hover {
+        color: #1da1f2;
+      }
+    }
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+
+    img {
+      border-radius: 50%;
+      width: 10%;
+      height: 10%;
+    }
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .switch {
+    position: absolute;
+    left: 1rem;
+    display: inline-block;
+    width: 4rem;
+    height: 2rem;
+
+    input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+
+      &:checked + .slider {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0 0);
+      }
+
+      &:checked + .slider:before {
+        -webkit-transform: translateX(2em);
+        -ms-transform: translateX(2em);
+        transform: translateX(2em);
+        background-color: #424242;
+      }
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      padding: auto;
+      height: 2em;
+      width: 4em;
+      border: none;
+      border-radius: 1.5em;
+      background-color: inherit;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0 0);
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+
+      &:before {
+        position: absolute;
+        content: "";
+        height: 1.4em;
+        width: 1.4em;
+        left: 0.3em;
+        top: 0.3em;
+        background-color: #f5f5f5;
+        border-radius: 50%;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      .fa-sun {
+        position: absolute;
+        left: 0.5em;
+        top: 0.5em;
+        color: orange;
+      }
+      .fa-moon {
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em;
+        color: #f5f3ce;
+      }
+    }
+  }
+}
