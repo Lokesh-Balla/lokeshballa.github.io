@@ -74,8 +74,8 @@ body {
   }
 
   .switch {
+    position: relative;
     display: inline-block;
-    margin-left: -1.5rem;
     width: 4rem;
     height: 2rem;
 
@@ -102,6 +102,10 @@ body {
       padding: auto;
       height: 2em;
       width: 4em;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       border: none;
       border-radius: 1.5em;
       background-color: inherit;
