@@ -8,60 +8,46 @@
       src="https://kit.fontawesome.com/bb6da00542.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+    <title>Lokesh Balla</title>
   </head>
-  <body>
+  <body class="light-mode">
+    <nav>
+      <label class="switch">
+        <input
+          type="checkbox"
+          id="dark-mode-switch"
+          onclick="dark_mode_toggle()"
+          autocomplete="on"
+        />
+        <span class="slider">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+        </span>
+      </label>
+
+      <a href="https://github.com/Lokesh-Balla/">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/lokeshballa">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://twitter.com/lokesh_balla">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </nav>
+
     <header>
-      <div class="social-media-links">
-        <!-- <a href="https://github.com/Lokesh-Balla/" class="fab fa-github"></a> -->
-        <a href="https://github.com/Lokesh-Balla/"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/lokeshballa"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com/lokesh_balla"><i class="fab fa-twitter"></i></a>
-        
-      </div>
+      <img
+        src="https://www.w3schools.com/howto/img_avatar.png"
+        alt="profile_image"
+      />
       <h1>Lokesh Balla</h1>
       <p>
         A normal computer science graduate who likes to poke into stuff to
         fulfill his curiosity.
       </p>
     </header>
-
-    <div class="avatar">
-      <img src="assets/icons/profile.svg" alt="" />
-    </div>
-
-    <!-- Cards to List out Skills -->
-    <dir class="cards-holder">
-      <div class="card">
-        <h2>heading2</h2>
-        <p>blah blah is the blah blah. I am blah blah ...</p>
-      </div>
-
-      <div class="card">
-        <h2>heading2</h2>
-        <p>blah blah is the blah blah. I am blah blah ...</p>
-      </div>
-
-      <div class="card">
-        <h2>heading2</h2>
-        <p>blah blah is the blah blah. I am blah blah ...</p>
-      </div>
-
-      <div class="card">
-        <h2>heading2</h2>
-        <p>blah blah is the blah blah. I am blah blah ...</p>
-      </div>
-    </dir>
-
-    <footer>
-      <div>
-        Icons made by
-        <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
-        <a href="https://www.flaticon.com/" title="Flaticon"
-          >www.flaticon.com</a
-        >
-      </div>
-    </footer>
   </body>
 </html>
