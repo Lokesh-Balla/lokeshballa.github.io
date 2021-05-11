@@ -1,6 +1,5 @@
+@use "color_scheme" as *;
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Patua+One&display=swap");
-
-@import "color_scheme";
 
 * {
   box-sizing: border-box;
@@ -11,9 +10,16 @@
 }
 
 body {
-  margin: 1rem;
+  border: none;
+  margin: 0%;
+  padding: 0%;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  transition: background-color 0.5s ease, color 0.2s linear;
+
   nav {
-    background-color: inherit;
+    padding: 1rem;
+    background-color: var(--secondary-color);
 
     ul {
       display: flex;
@@ -38,19 +44,7 @@ body {
       a {
         text-decoration: none;
         font-size: 2rem;
-        color: #9e9e9e;
-
-        .fa-github:hover {
-          color: #24292e;
-        }
-
-        .fa-linkedin:hover {
-          color: #0a66c2;
-        }
-
-        .fa-twitter:hover {
-          color: #1da1f2;
-        }
+        color: var(--text-color);
       }
     }
   }
@@ -60,6 +54,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--secondary-color);
 
     img {
       border-radius: 50%;

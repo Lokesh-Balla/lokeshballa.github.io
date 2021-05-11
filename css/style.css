@@ -1,12 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Patua+One&display=swap");
+:root {
+  --primary-light: #f7f7f7;
+  --secondary-light: #eeeeee;
+  --text-light: #000000;
+  --primary-dark: #393e46;
+  --secondary-dark: #929aab;
+  --text-dark: #ffffff;
+}
+
 .light-mode {
-  background-color: #eeeeee;
-  color: black;
+  --primary-color: var(--primary-light);
+  --secondary-color: var(--secondary-light);
+  --text-color: var(--text-light);
 }
 
 .dark-mode {
-  background-color: #424242;
-  color: white;
+  --primary-color: var(--primary-dark);
+  --secondary-color: var(--secondary-dark);
+  --text-color: var(--text-dark);
 }
 
 * {
@@ -18,10 +29,16 @@
 }
 
 body {
-  margin: 1rem;
+  border: none;
+  margin: 0%;
+  padding: 0%;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  transition: background-color 0.5s ease, color 0.2s linear;
 }
 body nav {
-  background-color: inherit;
+  padding: 1rem;
+  background-color: var(--secondary-color);
 }
 body nav ul {
   display: flex;
@@ -45,22 +62,14 @@ body nav ul li:last-child {
 body nav ul a {
   text-decoration: none;
   font-size: 2rem;
-  color: #9e9e9e;
-}
-body nav ul a .fa-github:hover {
-  color: #24292e;
-}
-body nav ul a .fa-linkedin:hover {
-  color: #0a66c2;
-}
-body nav ul a .fa-twitter:hover {
-  color: #1da1f2;
+  color: var(--text-color);
 }
 body header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--secondary-color);
 }
 body header img {
   border-radius: 50%;
