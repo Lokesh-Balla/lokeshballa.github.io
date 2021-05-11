@@ -70,6 +70,7 @@ body header {
   justify-content: center;
   align-items: center;
   background-color: var(--secondary-color);
+  padding: 1rem;
 }
 body header img {
   border-radius: 50%;
