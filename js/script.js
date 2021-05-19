@@ -1,10 +1,6 @@
 const dark_mode_toggle = document.getElementById("dark-mode-switch");
 const body = document.body;
 
-if (localStorage.getItem("dark-mode") == "true") {
-  dark_mode_toggle.checked = true;
-}
-
 dark_mode_toggle.onclick = () => {
   if (dark_mode_toggle.checked == true) {
     body.classList.remove("light-mode");
@@ -16,3 +12,7 @@ dark_mode_toggle.onclick = () => {
     localStorage.setItem("dark-mode", "false");
   }
 };
+
+if (localStorage.getItem("dark-mode") == "true") {
+  dark_mode_toggle.click();
+}
