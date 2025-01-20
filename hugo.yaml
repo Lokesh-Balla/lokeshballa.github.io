@@ -1,0 +1,18 @@
+baseURL: https://lokesh-balla.github.io/
+languageCode: en-us
+title: Lokesh Blog
+theme: PaperMod
+params:
+  homeInfoParams:
+    Title: 👋 Hi, I'm Lokesh Balla
+    Content: "I'm a software engineer with a passion for creating things. I write about software development, development tools, and anything else that fascinates me."
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/lokesh-balla/"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/lokeshballa"
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
